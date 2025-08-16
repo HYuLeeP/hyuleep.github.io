@@ -9,56 +9,59 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# 李宇森 Li Yusen
+*Updated: 16 August 2025*
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**Contact**  
+- Email: [li.yusen.astr@gmail.com](mailto:li.yusen.astr@gmail.com)  
+- Phone (AU): +61 0401 873 569
+- Phone (CN): +86 136 9112 0947
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+---
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research interests
+- Milky Way: Galactic archaeology, Galaxy structures and dynamics  
+- Galactic dynamics: Orbits, stellar dynamics, bars  
+- Computing: Simulation, mathematical modelling, machine learning, Julia  
+- Galaxies: Formation and evolution, morphology and structures  
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+---
+
+## Education
+**Australian National University, Canberra, Australia**
+- *MSc (Advanced) in Astronomy and Astrophysics* — 2025.07 – present
+- *BSc (Hons) in Astronomy and Astrophysics* — 2021.02 – 2024.12
+  - Supervisors: [Prof. Kenneth Freeman](https://rsaa.anu.edu.au/people/professor-ken-freeman), [Prof. Helmut Jerjen](https://rsaa.anu.edu.au/people/professor-helmut-jerjen)
+  - Major: Mathematics & Astronomy and Astrophysics  
+
+---
+
+## Awards & honours
+- **[Bok Prize](https://asa.astronomy.org.au/prizes_and_grants/prizes-awards/bok-prize/)** (Astronomical Society of Australia) — July 2025  
+    *Awarded for the most outstanding Honours/Masters thesis in Australian astronomy.*  
+
+---
+
+## Academic experience
+- **Visitor**, National Astronomical Observatories, Chinese Academy of Sciences (NAOC), Beijing, China — 2024.12 – 2025.06  
+
+---
+
+## Publications
+All of my publications can be found in my [ADS library](https://ui.adsabs.harvard.edu/public-libraries/ysq6437FTWCGPLlaGlwfYA). 
+
+- **Li, Y.**, Freeman, K., & Jerjen, H. 2025a, *Monthly Notices of the Royal Astronomical Society*, “On the origin of the Hercules group: II. the Trojan quasi-periodic identity on the orbital level”. [ADS entry](https://ui.adsabs.harvard.edu/public-libraries/ysq6437FTWCGPLlaGlwfYA).  
+- **Li, Y.**, Freeman, K., Jerjen, H., Buder, S., Hayden, M., & Mondal, A. 2025b, *Monthly Notices of the Royal Astronomical Society*, 538, “On the origin of the Hercules group - I. Chemical signatures indicating the outer bar origin”. [ADS entry](https://ui.adsabs.harvard.edu/public-libraries/ysq6437FTWCGPLlaGlwfYA).  
+
+---
+
+## Talks & Conferences
+-  **On the chemical and orbital origin of Hercules**
+    - The 2025 Astronomical Society of Australia Annual Scientific Meeting.  
+    - *Prize Talk*
+- Stellar Orbit Dynamics 
+    - Mount Stromlo Student Seminar, 2024.
+    - *Presentation*  
+- The dynamical origin of the Hercules stream 
+   - The 2024 Astronomical Society of Australia Annual Scientific Meeting. 
+   - *Sparkler*

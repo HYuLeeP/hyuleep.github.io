@@ -8,15 +8,15 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-encoding                 : "utf-8"
-site_theme               : "default"
-title                    : "Home"
+site_theme               : "default" # Currently available options are "default", "air"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Li Yusen"
-description              : &description "Homepage for Li Yusen"
-url                      : https://hyuleep.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-# baseurl                  : "" # the subpath of your site, e.g. "/blog"
+# description              : &description "personal description"
+# url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 # repository               : "academicpages/academicpages.github.io"
+# encoding: "utf-8"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,59 +24,60 @@ url                      : https://hyuleep.github.io # the base hostname & proto
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Li Yusen"
+  name             : "李宇森 Li Yusen"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Student in Astronomy and Astrophysics"
+  location         : "Canberra, Australia"
+  employer         : "Australian National University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "li.yusen.astr@gmail.com" 
 
   # Academic websites
-  # academia         : # URL
-  # arxiv            : # URL - Update with the correct link to your profile
+  academia         : # URL
+  arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=oV1-eM4AAAAJ"
-  # impactstory      : # URL
+  inspire-hep      : # URL
+  impactstory      : # URL
   orcid            : "http://orcid.org/0009-0003-8249-6782"
-  # semantic         : # URL
-  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  # researchgate     : # URL
-  # scopus           : # URL
+  semantic         : # URL
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  researchgate     : # URL
+  scopus           : # URL
 
-  # # Repositories and software development
-  # bitbucket        : # Username - Update with your username on the site
-  # codepen          : # Username
-  # dribbble         : # Username
-  # github           : "academicpages"
-  # kaggle           : # Username  
-  # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # Repositories and software development
+  bitbucket        : # Username - Update with your username on the site
+  codepen          : # Username
+  dribbble         : # Username
+  github           : # "academicpages"
+  kaggle           : # Username  
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
-  # # Social media
-  # artstation       : # Username
-  # bluesky          : "bsky.app" # Replace this with you Bluesky username
-  # facebook         : # Username
-  # flickr           : # Username
-  # foursquare       : # Username
-  # goodreads        : # Username
-  # google_plus      : # Username
-  # keybase          : # Username
-  # instagram        : # Username
-  # lastfm           : # Username
-  # linkedin         : # Username
-  # mastodon         : # URL
-  # medium           : # URL
-  # pinterest        : # Username
-  # soundcloud       : # Username
-  # steam            : # Username
-  # telegram         : # URL
-  # tumblr           : # Username
-  # twitter          : # Username for X / Twitter
-  # vine             : # Username
-  # weibo            : # Username
-  # wikipedia        : # Username
-  # xing             : # Username
-  # youtube          : # Username
-  # zhihu            : # Username
+  # Social media
+  artstation       : # Username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
+  facebook         : # Username
+  flickr           : # Username
+  foursquare       : # Username
+  goodreads        : # Username
+  google_plus      : # Username
+  keybase          : # Username
+  instagram        : # Username
+  lastfm           : # Username
+  linkedin         : Yusen (Li Yusen) Li # Username
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       : # Username
+  steam            : # Username
+  telegram         : # URL
+  tumblr           : # Username
+  twitter          : # Username for X / Twitter
+  vine             : # Username
+  weibo            : # Username
+  wikipedia        : # Username
+  xing             : # Username
+  youtube          : # Username
+  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -84,76 +85,76 @@ publication_category:
   #   title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
-  # conferences:
-  #   title: 'Conference Papers'
+  conferences:
+    title: 'Conference Papers'
 
-# # Site Settings
-# teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs              : false # true, false (default)
-# words_per_minute         : 160
-# future                   : true
-# read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-# talkmap_link             : false      #change to true to add link to talkmap on talks page
-# comments:
-#   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-#   disqus:
-#     shortname            :
-#   discourse:
-#     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-#   facebook:
-#     appid                :
-#     num_posts            : # 5 (default)
-#     colorscheme          : # "light" (default), "dark"
-# staticman:
-#   allowedFields          : ['name', 'email', 'url', 'message']
-#   branch                 : "gh-pages" # "master", "gh-pages"
-#   commitMessage          : "New comment."
-#   filename               : comment-{@timestamp}
-#   format                 : "yml"
-#   moderation             : true
-#   path                   : "_data/comments/{options.slug}"
-#   requiredFields         : ['name', 'email', 'message']
-#   transforms:
-#     email                : "md5"
-#   generatedFields:
-#     date:
-#       type               : "date"
-#       options:
-#         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-# atom_feed:
-#   hide                   : false     # change to true to hide the RSS feed in the footer
-#   path                   : # blank (default) uses feed.xml
-
-
-# # SEO Related
-# google_site_verification :
-# bing_site_verification   :
-# alexa_site_verification  :
-# yandex_site_verification :
+# Site Settings
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : false      #change to true to add link to talkmap on talks page
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages" # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
+  path                   : # blank (default) uses feed.xml
 
 
-# # Social Sharing
-# twitter:
-#   username               : &twitter
-# facebook:
-#   username               :
-#   app_id                 :
-#   publisher              :
-# og_image                 :  # Social media default site image
-# og_description           :  # Social media default site image description
-# # For specifying social profiles
-# # - https://developers.google.com/structured-data/customize/social-profiles
-# social:
-#   type                   : # Person or Organization (defaults to Person)
-#   name                   : # If the user or organization name differs from the site's name
-#   links: # An array of links to social media profiles
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
 
-# # Analytics
-# analytics:
-#   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-#   google:
-#     tracking_id          :
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :  # Social media default site image
+og_description           :  # Social media default site image description
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
 
 
 # Reading Files
@@ -188,16 +189,10 @@ exclude:
   - README
   - tmp
   - vendor
-  - _pages/
-  - _posts/
-  - files/
-  - talks/
-  - teaching/
-
 keep_files:
   - .git
   - .svn
-
+encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
@@ -223,15 +218,15 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  # teaching:
-  #   output: true
-  #   permalink: /:collection/:path/
+  teaching:
+    output: false
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  # portfolio:
-  #   output: true
-  #   permalink: /:collection/:path/
+  portfolio:
+    output: false
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -240,16 +235,17 @@ collections:
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+  # - scope:
+  #     path: ""
+  #     type: posts
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     share: true
+  #     related: true
+
   # _pages
   - scope:
       path: ""
@@ -257,25 +253,19 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # # _teaching
+
+  # _teaching?
+  # _publications
   # - scope:
   #     path: ""
-  #     type: teaching
+  #     type: publications
   #   values:
   #     layout: single
   #     author_profile: true
   #     share: true
   #     comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # # _portfolio
+
+  # _portfolio
   # - scope:
   #     path: ""
   #     type: portfolio
@@ -284,14 +274,15 @@ defaults:
   #     author_profile: true
   #     share: true
   #     comment: true
+
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
 
 
 # Sass/SCSS
@@ -308,20 +299,22 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
+# plugins:
+
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
+  # - jemoji
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
