@@ -215,15 +215,21 @@
             <!-- CV TAB -->
             <div id="content-cv" class="tab-content">
                 <div class="bg-zinc-900 rounded-3xl p-4 border border-zinc-800">
-                    <div class="aspect-[3/4] lg:aspect-auto min-h-[70vh] lg:min-h-[80vh] bg-zinc-950 rounded-2xl overflow-hidden border border-zinc-700">
+                    
+                    <!-- PDF Viewer Container -->
+                    <div class="bg-zinc-950 rounded-2xl overflow-hidden border border-zinc-700 min-h-[70vh] lg:min-h-[85vh]">
                         <iframe id="cv-iframe" 
                                 src="./files/CV.pdf" 
-                                class="w-full h-full"
-                                frameborder="0"></iframe>
+                                class="w-full h-full min-h-[70vh]"
+                                style="aspect-ratio: 3 / 4;"
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
                     </div>
                     
+                    <!-- Download Button -->
                     <div class="text-center mt-6">
-                        <a href="your-cv.pdf" target="_blank" 
+                        <a href="./files/CV.pdf" target="_blank" 
                         class="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 transition-colors text-white px-6 py-3 rounded-2xl text-sm font-medium">
                             <i class="fas fa-download"></i>
                             Download Full CV (PDF)
