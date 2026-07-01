@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         .kaiti {
-    font-family: "KaiTi", "楷体", "STKaiti", "SimKai", serif;
-    font-weight: normal;
-}
+        font-family: "KaiTi", "楷体", "STKaiti", "SimKai", 
+                    "Noto Serif SC", "Microsoft YaHei", serif;
+        font-weight: 500;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
         
         :root {
@@ -213,19 +214,20 @@
 
             <!-- CV TAB -->
             <div id="content-cv" class="tab-content">
-                <!-- Added max-w-4xl (or max-w-[850px]) and mx-auto to give it an A4 page structure -->
-                <div class="bg-zinc-900 rounded-3xl p-4 border border-zinc-800 max-w-4xl mx-auto shadow-2xl">
+                <div class="bg-zinc-900 rounded-3xl p-4 border border-zinc-800">
+                    <div class="aspect-[3/4] lg:aspect-auto min-h-[70vh] lg:min-h-[80vh] bg-zinc-950 rounded-2xl overflow-hidden border border-zinc-700">
+                        <iframe id="cv-iframe" 
+                                src="your-cv.pdf" 
+                                class="w-full h-full"
+                                frameborder="0"></iframe>
+                    </div>
                     
-                    <!-- The aspect-[1/1.414] class forces the iframe to maintain a strict A4 ratio dynamically -->
-                    <iframe id="cv-iframe" 
-                            src="./files/CV.pdf" 
-                            class="w-full aspect-[1/1.414] rounded-2xl"
-                            frameborder="0"></iframe>
-                            
-                    <div class="text-center pt-4 pb-2 text-zinc-400 text-sm">
-                        If the PDF doesn't load, 
+                    <div class="text-center mt-6">
                         <a href="your-cv.pdf" target="_blank" 
-                        class="text-[#66ccff] hover:underline">download it here</a>.
+                        class="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 transition-colors text-white px-6 py-3 rounded-2xl text-sm font-medium">
+                            <i class="fas fa-download"></i>
+                            Download Full CV (PDF)
+                        </a>
                     </div>
                 </div>
             </div>
