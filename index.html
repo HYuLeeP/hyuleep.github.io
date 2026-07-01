@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李宇森 Li, Yusen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .kaiti {
+    font-family: "KaiTi", "楷体", "STKaiti", "SimKai", serif;
+    font-weight: normal;
+}
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --accent-blue: #66ccff;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link.active {
+            border-bottom: 3px solid #66ccff;
+            color: #66ccff;
+        }
+
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+            color: #66ccff;
+        }
+
+        .profile-pic {
+            transition: transform 0.4s ease;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background: linear-gradient(180deg, #1f2937, #111827);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo / Name -->
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-[#66ccff] rounded-full flex items-center justify-center text-zinc-950 font-bold text-xl kaiti"></div>
+                    <span class="text-2xl font-semibold tracking-tight kaiti">李宇森</span><span class="text-2xl font-medium text-white mt-1">Li, Yusen</span>
+                </div>
+                
+                <!-- Tabs -->
+                <div class="flex items-center gap-8 text-sm font-medium">
+                    <button onclick="switchTab(0)" id="tab-home" 
+                            class="nav-link active px-4 py-4 text-zinc-400 hover:text-white flex items-center gap-2">
+                        <i class="fas fa-home"></i>
+                        <span>HOME</span>
+                    </button>
+                    <button onclick="switchTab(1)" id="tab-cv" 
+                            class="nav-link px-4 py-4 text-zinc-400 hover:text-white flex items-center gap-2">
+                        <i class="fas fa-file-alt"></i>
+                        <span>CV</span>
+                    </button>
+                </div>
+                
+                <!-- Theme indicator or links -->
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="#" onclick="window.location.reload()" 
+                       class="text-zinc-400 hover:text-[#66ccff] transition-colors">
+                        <i class="fas fa-sync-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 px-6 py-8">
+        <!-- SIDEBAR - Visible on both tabs -->
+        <div class="lg:w-80 flex-shrink-0">
+            <div class="sidebar rounded-3xl p-8 sticky top-24 border border-zinc-800">
+                <!-- Profile Picture -->
+                <div class="flex justify-center mb-6">
+                    <div class="relative">
+                        <img id="profile-img" 
+                             src="./files/Li Yusen sq.jpg" 
+                             alt="Your Profile Picture"
+                             class="profile-pic w-48 h-48 object-cover rounded-2xl border-4 border-[#66ccff]/30 shadow-2xl">
+                        <div class="absolute -bottom-2 -right-2 w-6 h-6 bg-emerald-400 rounded-full border-4 border-zinc-900"></div>
+                    </div>
+                </div>
+                
+                <!-- Name and Title -->
+                <div class="text-center mb-8">
+                    <div class="flex items-baseline justify-center gap-3">
+                        <h1 class="kaiti text-4xl leading-none">李宇森</h1>
+                        <h2 class="text-2xl text-white/90 font-light">Li, Yusen</h2>
+                    </div>
+                    <p class="text-[#66ccff] mt-1 text-lg">PhD student in Astronomy</p>
+                    <p class="text-zinc-400 text-sm mt-1">Australian National University</p>
+                    <p class="text-zinc-400 text-sm mt-1">University of Groningen</p>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xs uppercase tracking-widest text-zinc-500 mb-3">Contact</h3>
+                        <div class="space-y-4">
+                            <a href="mailto:li.yusen.astr@gmail.com" 
+                               class="flex items-center gap-3 text-zinc-300 hover:text-[#66ccff] transition-colors group">
+                                <i class="fas fa-envelope w-5 text-zinc-500 group-hover:text-[#66ccff]"></i>
+                                <span class="text-sm">li.yusen.astr@gmail.com</span>
+                            </a>
+                            
+                            <a href="https://orcid.org/0009-0003-8249-6782" target="_blank"
+                               class="flex items-center gap-3 text-zinc-300 hover:text-[#66ccff] transition-colors group">
+                                <i class="fab fa-orcid w-5 text-zinc-500 group-hover:text-[#66ccff]"></i>
+                                <span class="text-sm">ORCID:0009-0003-8249-6782</span>
+                            </a>
+                            
+                            <a href="https://scholar.google.com/citations?user=oV1-eM4AAAAJ&hl=en" target="_blank"
+                               class="flex items-center gap-3 text-zinc-300 hover:text-[#66ccff] transition-colors group">
+                                <i class="fas fa-graduation-cap w-5 text-zinc-500 group-hover:text-[#66ccff]"></i>
+                                <span class="text-sm">Google Scholar</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/yusen-li-8a27511a9/" target="_blank"
+                               class="flex items-center gap-3 text-zinc-300 hover:text-[#66ccff] transition-colors group">
+                                <i class="fab fa-linkedin w-5 text-zinc-500 group-hover:text-[#66ccff]"></i>
+                                <span class="text-sm">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links or Additional Info -->
+                    <div class="pt-6 border-t border-zinc-800">
+                        <p class="text-xs text-zinc-500 mb-2">LOCATION</p>
+                        <p class="text-zinc-300 text-sm">Canberra, Australia</p>
+                    </div>
+                </div>
+                
+                <!-- Social icons bottom -->
+                <!-- <div class="flex justify-center gap-6 mt-12 text-2xl text-zinc-500">
+                    <a href="#" class="hover:text-[#66ccff] transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-[#66ccff] transition-colors"><i class="fab fa-github"></i></a>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT AREA -->
+        <div class="flex-1">
+            <!-- HOME TAB -->
+            <div id="content-home" class="tab-content active">
+                <div class="prose prose-invert max-w-none markdown-content">
+                    <h1 class="text-5xl font-bold tracking-tighter logo-font mb-4">Welcome!</h1>
+                    <p class="text-xl text-zinc-400 mb-10"><p>I'm currently a Masters student in Astronomy and Astrophysics at the Australian National University. Prior to Masters, I completed a Bachelor of Science double majoring in Mathematics and Astronomy an Astrophysics before an Honours year (Bachelor of Science Honours) at the ANU.</p>
+<br />
+<p>I've worked on the chemical abundances and orbital dynamics of stars in our Milky Way, specifically related to the central Galactic bar and kinematic groups (or moving groups) in the solar neighbourhood.</p>
+<br />
+<p>I'm now working on an integrate field spectroscopy study of the edge-on barred galaxy NGC5746.</p>
+<br />
+<hr />
+<br />
+<p>Find more information about me in my <a href="./files/CV.pdf" style="color: #0066cc; text-decoration: underline;">CV</a>.</p>
+<br />
+<hr />
+<br />
+<p>You can find an list of my publications in the <a href="https://ui.adsabs.harvard.edu/public-libraries/ysq6437FTWCGPLlaGlwfYA "style="color: #0066cc; text-decoration: underline;">ADS library</a>.</p></p>
+                    
+                    <!-- Placeholder for Markdown content -->
+                    <div id="main-content" class="text-zinc-300 leading-relaxed text-[17px]">
+                        <!-- <p>Replace this section with your own content. You can write in Markdown and convert it to HTML, or directly edit the HTML here.</p> -->
+                        <!-- 
+                        <h2 class="mt-12 text-3xl font-semibold text-white">Research Interests</h2>
+                        <ul class="list-disc pl-5 space-y-2 mt-4">
+                            <li>Topic 1</li>
+                            <li>Topic 2</li>
+                            <li>Topic 3</li>
+                        </ul>
+                        
+                        <h2 class="mt-12 text-3xl font-semibold text-white">Latest Updates</h2>
+                        <div class="mt-6 space-y-8">
+                            <div class="border-l-4 border-[#66ccff] pl-6">
+                                <div class="text-sm text-zinc-500">June 2026</div>
+                                <p class="mt-1">New paper accepted at Conference X.</p>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV TAB -->
+            <div id="content-cv" class="tab-content">
+                <!-- Added max-w-4xl (or max-w-[850px]) and mx-auto to give it an A4 page structure -->
+                <div class="bg-zinc-900 rounded-3xl p-4 border border-zinc-800 max-w-4xl mx-auto shadow-2xl">
+                    
+                    <!-- The aspect-[1/1.414] class forces the iframe to maintain a strict A4 ratio dynamically -->
+                    <iframe id="cv-iframe" 
+                            src="./files/CV.pdf" 
+                            class="w-full aspect-[1/1.414] rounded-2xl"
+                            frameborder="0"></iframe>
+                            
+                    <div class="text-center pt-4 pb-2 text-zinc-400 text-sm">
+                        If the PDF doesn't load, 
+                        <a href="your-cv.pdf" target="_blank" 
+                        class="text-[#66ccff] hover:underline">download it here</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-zinc-900 border-t border-zinc-800 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            © 2026 Yusen Li. Built Tailwind CSS and Grok. 
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabIndex) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected
+            if (tabIndex === 0) {
+                document.getElementById('content-home').classList.add('active');
+            } else {
+                document.getElementById('content-cv').classList.add('active');
+            }
+            
+            // Update active nav
+            document.getElementById('tab-home').classList.toggle('active', tabIndex === 0);
+            document.getElementById('tab-cv').classList.toggle('active', tabIndex === 1);
+        }
+
+        // Tailwind script already loaded via CDN
+        // Make sidebar responsive
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 1024) {
+                // Mobile adjustments if needed
+            }
+        });
+
+        // Keyboard shortcut hint (optional)
+        console.log('%cPersonal site template ready. Edit the HTML to customize!', 'color: #66ccff; font-size: 12px');
+    </script>
+</body>
+</html>
